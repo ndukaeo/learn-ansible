@@ -4,4 +4,4 @@
 
 - name: Print
   ansible.builtin.debug:
-    msg: "URL2 - {{ URL }} URL3 - {{ URL3 }}"
+    msg: "URL2 - {{ URL2 }} URL3 - {{ URL3 }} URL - {{ URL }}"
