@@ -1,10 +1,10 @@
 - name: ping for connection
-  hosts: all
+  hosts: loscalhost
   tasks:
     - ping:
 
 - name: Sample playbook
-  hosts: all
+  hosts: localhost
   tasks:
     - name: Print Hello World
       ansible.builtin.debug:
