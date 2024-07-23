@@ -1,0 +1,8 @@
+- name: retrieve secrets
+  hosts: localhost
+  tasks:
+    - debug:
+        msg: "{{ lookup('hashi_vault', 'secret=kv/data/test:MYPASS token={{vault_token}} url=https://vault-internal.banecio-devops.online:8200 validate_certs=false')}}"
+
+#need to install hashicorp vault module -
+#sudo pip3.11 install hvac
